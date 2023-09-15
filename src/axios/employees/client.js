@@ -71,7 +71,7 @@ export const registerOneEmployee = async (employee) => {
         confirmButtonText: 'Cool'
       }).then(() => {
 
-        windows.reload();
+        window.location.reload();
 
       });
     }

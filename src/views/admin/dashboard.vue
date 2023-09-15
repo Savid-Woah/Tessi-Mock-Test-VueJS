@@ -45,7 +45,7 @@
                         <button :disabled="min > max || (min == 0 && max == 0)" @click="getEmployeesBySalaryRange" class="btn btn-outline-success" type="button">Fetch</button>
                         <button @click="getEmployees" class="btn btn-outline-danger mx-2" type="button">All</button>
                       </form>
-                      <a type="button" class="btn btn-light" style="background-color: rgb(143 1 1); color:white;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <a @click="resetEmployee" type="button" class="btn btn-light" style="background-color: rgb(143 1 1); color:white;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Register Employee
                       </a>
                       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -297,6 +297,17 @@ export default{
     },
     async getSkills() {
       this.skills = await getAllSkills();
+    },
+    resetEmployee() {
+      this.employee = {
+        name: '',
+        email: '',
+        phone: '',
+        address: '',
+        position: '',
+        salary: '',
+        skills_ids: []
+      }
     },
   },
   mounted() {
