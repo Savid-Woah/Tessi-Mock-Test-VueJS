@@ -1,0 +1,82 @@
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front">
+      front
+      <button class="press">boton</button>
+    </div>
+    <div class="card__face card__face--back">back
+      <button class="press">boton</button>
+
+    </div>
+  </div>
+</div>
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front">
+      fronta
+      <button class="press">boton</button>
+    </div>
+    <div class="card__face card__face--back">backo
+      <button class="press">boton</button>
+
+    </div>
+  </div>
+</div>
+<p>Click button to flip.</p>
+
+<style>
+  body { font-family: sans-serif; }
+
+  .scene {
+    display: inline-block;
+    width: 200px;
+    height: 260px;
+    margin: 40px 0;
+    perspective: 600px;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 0.3s;
+  }
+
+  .card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    backface-visibility: hidden;
+  }
+
+  .card__face--front {
+    background: crimson;
+    font-size: 20px;
+  }
+
+  .card__face--back {
+    background: slateblue;
+    transform: rotateY(180deg);
+  }
+</style>
+
+<script>
+  var buttons = document.querySelectorAll('.press');
+
+  [...buttons].forEach((button) => {
+    button.addEventListener('click', function(event) {
+      var card = event.target.closest('.card');
+      card.classList.toggle('is-flipped');
+    });
+  });
+</script>

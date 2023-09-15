@@ -1,0 +1,208 @@
+
+body {
+  margin: 0;
+}
+
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(1, 143, 34, 1) 1%, rgba(1, 194, 46, 1) 89%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.splash-image {
+  background-image: url('../img/logo/Waitless_white-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 70%;
+  height: 90%;
+}
+
+
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: local('Sofia Pro Regular'), local('Sofia-Pro-Regular'),
+        url('../../../public/assets-user/fonts/SofiaProRegular.woff2') format('woff2'),
+        url('../../../public/assets-user/fonts/SofiaProRegular.woff') format('woff'),
+        url('../../../public/assets-user/fonts/SofiaProRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro Bold';
+    src: local('Sofia Pro Bold'), local('Sofia-Pro-Bold'),
+        url('../../../public/assets-user/fonts/SofiaProBold.woff2') format('woff2'),
+        url('../../../public/assets-user/fonts/SofiaProBold.woff') format('woff'),
+        url('../../../public/assets-user/fonts/SofiaProBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro Medium';
+    src: local('Sofia Pro Medium'), local('Sofia-Pro-Medium'),
+        url('../../../public/assets-user/fonts/SofiaProMedium.woff2') format('woff2'),
+        url('../../../public/assets-user/fonts/SofiaProMedium.woff') format('woff'),
+        url('../../../public/assets-user/fonts/SofiaProMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+.container-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2vw 0px 5vw 0px;
+}
+
+.spacing{
+    width: 5px;
+}
+.boton-text{
+    margin-bottom: 15px ;
+}
+.pie-pagina{
+    position: absolute;
+    bottom: 0px;
+    height: 200px;
+    width: 100vw;
+}
+.qr-button {
+    border-radius: 48.081px;
+    background: #000;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    margin: 10px 3px 10px 10px;
+}
+
+.linkenterate{
+    font-family: 'Sofia Pro';
+    color: white;
+    font-size: 14px;
+}
+
+.enterate{
+    color: white;
+}
+
+.font-regular {
+    font-family: 'Sofia Pro';
+
+}
+.botones-ingreso{
+    display: flex;
+    width: 40VW;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 27.406px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.21);
+    align-items: flex-end;
+    font-family: 'Sofia Pro';
+}
+.font-bold {
+    font-family: 'Sofia Pro Bold';
+
+}
+.qr-image{
+    width: 22px;
+    margin-top: 6px;
+}
+
+.margint-2 {
+    margin: 5px -20px 3px -20px;
+}
+
+.container-title {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.hrw {
+    border-top: 2px solid white;
+    opacity: 0.6;
+    width: 20%;
+}
+
+.waitlessc {
+    color: #01C22E;
+}
+
+.bluedark{
+    color:#191B2F
+}
+
+.alignstart {
+    text-align: start;
+}
+
+.fs40 {
+    font-size: 48px;
+}
+
+.fs20 {
+    font-size: 16px;
+}
+
+.blackc {
+    color: black;
+}
+
+.whitec {
+    color: rgb(255, 255, 255);
+}
+
+.welcome-text {
+    margin-top: clamp(148px, 10vw, 62px);
+    margin-left: clamp(15vw, 15%, 5vw);
+    width: 290px;
+}
+
+.font-medium {
+    font-family: 'Sofia Pro Medium';
+
+}
+
+.splash-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.screen-background {
+    background-image: linear-gradient(#191b2f00, #191B2F), url('../img/auth/authimage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-x: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 338px) {
+  p {
+    font-size: 13.5px;
+  }
+}
+
+
+/* responsive media elements */
+@media (max-width: 312px)  {
+  p {
+    font-size: 12px;
+  }
+}

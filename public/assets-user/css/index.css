@@ -1,0 +1,368 @@
+@font-face {
+    font-family: 'Sofia Pro';
+    src: local('Sofia Pro Regular'), local('Sofia-Pro-Regular'),
+        url('../fonts/SofiaProRegular.woff2') format('woff2'),
+        url('../fonts/SofiaProRegular.woff') format('woff'),
+        url('../fonts/SofiaProRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro Bold';
+    src: local('Sofia Pro Bold'), local('Sofia-Pro-Bold'),
+        url('../fonts/SofiaProBold.woff2') format('woff2'),
+        url('../fonts/SofiaProBold.woff') format('woff'),
+        url('../fonts/SofiaProBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro Medium';
+    src: local('Sofia Pro Medium'), local('Sofia-Pro-Medium'),
+        url('../fonts/SofiaProMedium.woff2') format('woff2'),
+        url('../fonts/SofiaProMedium.woff') format('woff'),
+        url('../fonts/SofiaProMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Sofia Pro';
+}
+.navbar,
+.center {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.fade-in {
+  opacity: 1;
+}
+.badge {
+    display: inline-flex;
+    width: 80px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    position: relative;
+    border-radius: 100px;
+    background: #FFF;
+    box-shadow: 0px 5.847456932067871px 23.389827728271484px 0px rgba(254, 114, 76, 0.20);
+}
+
+.badge2 {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    position: relative;
+    border-radius: 100px;
+    background: #FE724C;
+    box-shadow: 0px 5.847456932067871px 23.389827728271484px 0px rgba(254, 114, 76, 0.20);
+    justify-content: center;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: solid 1px #0000001c;
+    border-bottom: solid white;
+    z-index: 1;
+}
+
+.caracteristicas {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.badge-text {
+    text-align: center;
+    margin-top: 3px;
+    font-family: 'Sofia Pro Bold';
+    font-size: 14px;
+}
+
+.badge-text3 {
+    margin-top: 15%;
+    font-size: 20px;
+    /* margin-left: 5px; */
+    /*   margin: 0px !important; */
+}
+
+.badge-text2 {
+    text-align: center;
+    margin-top: 7px;
+    margin-left: 2px;
+    font-family: 'Sofia Pro' !important;
+    font-size: 10px;
+    color: gray !important;
+}
+
+.badge-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 3%;
+    padding: 7px;
+}
+
+.texticon {
+    display: flex;
+    margin: 5px 0px 0px 0px;
+}
+
+.restaurante-info {
+    margin: 5px 10px;
+}
+
+.badges-container {
+    display: flex;
+}
+
+.restaurante-slider {
+    display: flex;
+    overflow-x: scroll;
+    height: 280px;
+    scrollbar-width: none;
+    /* Oculta la barra de desplazamiento en navegadores que lo admiten */
+}
+
+.restaurante-slider::-webkit-scrollbar {
+    display: none;
+    /* Oculta la barra de desplazamiento en navegadores basados en WebKit */
+}
+
+.flex-end {
+    display: flex;
+    align-items: center;
+    color: #01C22E;
+
+}
+
+.category {
+    display: flex;
+    overflow-x: scroll;
+    margin: 20px 0px 20px 10px;
+    height: 70px;
+    scrollbar-width: none;
+    padding-top: 3px;
+}
+
+.botones-ingreso {
+    display: flex;
+    width: 40vw;
+    min-width: 180px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 27.406px;
+    color: #FFF;
+    background: #01C22E;
+    /* border: #FFF 1.2px solid; */
+    align-items: flex-end;
+    font-family: 'Sofia Pro';
+    margin-left: 12px;
+    /*  box-shadow: #01c22e59 2px 4px 7px 0px; */
+    box-shadow: #01c22e59 3px 5px 7px 1px;
+
+}
+
+.category::-webkit-scrollbar {
+    display: none;
+    /* Oculta la barra de desplazamiento en navegadores basados en WebKit */
+}
+
+.menu-image {
+    width: 22px;
+    margin-top: 4px;
+}
+
+.menu-item {
+    box-shadow: #9a9a9a14 3px 6px 11px 2px;
+    border-radius: 12px;
+    padding: 10px 5px 1px;
+    height: 50px;
+    width: 50px;
+    margin-left: -10px;
+
+}
+
+.menu-item2 {
+    margin-right: -5px;
+    box-shadow: #ff9b0040 3px 6px 11px 2px;
+    border-radius: 12px;
+    padding: 10px 5px 1px;
+    height: 50px;
+    width: 50px;
+    margin-left: -20px;
+    background-image: url('../img/icons/image13.png');
+    background-size: cover;
+    background-position-y: 5px;
+
+}
+
+.img-restaurante {
+    background-image: url('../img/subway.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    background-position: center;
+}
+
+.waitlessc {
+    color: #01C22E;
+}
+
+.badges {
+    background: #f3f1f6;
+    width: 35%;
+    border-radius: 6px;
+    color: #00000070;
+    height: 28px;
+    margin-right: 5px;
+    display: inline-block;
+    padding: 0px 3px;
+
+}
+
+.restaurante-nombre {
+    font-size: 20px;
+    font-family: 'Sofia Pro Bold';
+    color: black;
+    text-align: start;
+}
+
+.blackc {
+    color: black;
+    margin-left: 5px;
+}
+
+.restaurante-imagen2 {
+    background-image: url('../img/product4.jpg');
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.restaurante-imagen {
+    background-image: url('../img/image55.png');
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.restaurante-imagen4 {
+    background-image: url('../img/cocktail1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
+    background-position-y: -67px;
+}
+
+.restaurante-imagen6 {
+    background-image: url('../img/donuts1.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.restaurante-imagen7 {
+    background-image: url('../img/donuts2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
+    background-position-y: -168px;
+}
+
+.restaurante-imagen5 {
+    background-image: url('../img/cocktail2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
+    background-position-y: -47px;
+}
+
+.restaurante-imagen3 {
+    background-image: url('../img/product2.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+
+}
+
+.restaurante-card {
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 15px 15px 30px 0px rgba(211, 209, 216, 0.25);
+    min-width: 267px;
+    height: 229px;
+    margin: 10px 0px 0px 20px;
+}
+
+.restaurante-titulo {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+
+.header-display {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.titulo {
+    font-family: 'Sofia Pro Bold';
+    text-align: start;
+    font-size: 30px;
+    width: 75%;
+    margin-left: 7vw;
+    margin-top: 3vw;
+}
+
+.restaurant-name {
+    color: #01C22E;
+    font-family: 'Sofia Pro Medium';
+}
+
+.qr-button {
+    border-radius: 48.081px;
+    background: #ffffff;
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    margin: 10px 3px 10px 10px;
+}
+
+.qr-image {
+    width: 37px;
+    height: 37px;
+    border-radius: 30px;
+    margin-left: -1px;
+    margin-top: -1px;
+}

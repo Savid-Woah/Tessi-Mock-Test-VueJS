@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Sofia Pro';
+    src: local('Sofia Pro Regular'), local('Sofia-Pro-Regular'),
+        url('../fonts/SofiaProRegular.woff2') format('woff2'),
+        url('../fonts/SofiaProRegular.woff') format('woff'),
+        url('../fonts/SofiaProRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro Bold';
+    src: local('Sofia Pro Bold'), local('Sofia-Pro-Bold'),
+        url('../fonts/SofiaProBold.woff2') format('woff2'),
+        url('../fonts/SofiaProBold.woff') format('woff'),
+        url('../fonts/SofiaProBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro Medium';
+    src: local('Sofia Pro Medium'), local('Sofia-Pro-Medium'),
+        url('../fonts/SofiaProMedium.woff2') format('woff2'),
+        url('../fonts/SofiaProMedium.woff') format('woff'),
+        url('../fonts/SofiaProMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.name-settings {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    justify-content: space-between;
+    width: 75%;
+    align-items: baseline;
+}
+
+.container-info {
+    width: 99%;
+    height: 200px;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 15px;
+    font-family: 'Sofia Pro Medium';
+}
+
+.review-date {
+    color: rgba(128, 128, 128, 0.607) !important;
+}
+
+.user-photo {
+    background-image: url('../img/user1.jpg');
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 60px;
+    background-position: center;
+}
+
+
+.user-photo2 {
+    background-image: url('../img/user3.jpg');
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 60px;
+    background-position: center;
+}
+
+.user-photo3 {
+    background-image: url('../img/user2.jpg');
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 60px;
+    background-position: center;
+}
+
+
+.user-info {
+    display: flex;
+    margin-left: 10%;
+    width: 90%;
+}
+
+.reseña {
+    width: 80%;
+    margin-left: 10%;
+    text-align: start;
+    color: gray;
+    font-size: 15px;
+}
+
+.img-user {
+
+    border-radius: 190px;
+    width: 35px;
+    height: 35px;
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-right: 5vw;
+    background-size: cover;
+    background-position-y: 3px;
+    background-image: url('../img/icons/image13.png');
+}
+
+.text-review {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.write-review {
+    border-radius: 10px;
+    border: solid 1px #8080801f;
+    box-shadow: 4px 4px 20px 2px #b7b7b71c;
+    width: 80%;
+    height: 50%;
+}
+
+.container-reviews {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    font-family: 'Sofia Pro';
+}
+
+.menu-item {
+    box-shadow: #9a9a9a14 3px 6px 11px 2px;
+    border-radius: 12px;
+    padding: 10px 5px 1px;
+    height: 50px;
+    width: 50px;
+    margin-left: -10px;
+
+}
+
+.menu-image {
+    width: 30px;
+    margin-top: 4px;
+}
+
+.header-display {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
