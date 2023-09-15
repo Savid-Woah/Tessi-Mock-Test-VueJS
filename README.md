@@ -1,5 +1,4 @@
-# tessi_mockup
-
+# Front-end VueJS
 
 ## Project setup
 ```
