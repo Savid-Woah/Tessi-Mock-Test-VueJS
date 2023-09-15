@@ -1,14 +1,11 @@
 import axios from "axios";
 import { exceptionHandler } from "../../../exceptions/index.js";
 import Swal from 'sweetalert2';
-import config from '../../../config/index';
-
-const url = `${config.api.host}/${config.api.tessi_mock_api}`
 
 export const getAllEmployees = async () => {
 
   try {
-    const response = await axios.get(`${url}/employees/`, {
+    const response = await axios.get(`http://localhost:8000/api/employees/`, {
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
@@ -22,7 +19,7 @@ export const getAllEmployees = async () => {
 
 export const getOneEmployeeDetails = async (id) => {
   try {
-    const response = await axios.get(`${url}/employees/get-details-by-id/${id}`, {
+    const response = await axios.get(`http://localhost:8000/api/employees/get-details-by-id/${id}`, {
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
@@ -36,7 +33,7 @@ export const getOneEmployeeDetails = async (id) => {
 
 export const getOneEmployeeByEmail = async (email) => {
   try {
-    const response = await axios.get(`${url}/employees/get-employee-by-email/${email}`, {
+    const response = await axios.get(`http://localhost:8000/api/employees/get-employee-by-email/${email}`, {
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
@@ -50,7 +47,7 @@ export const getOneEmployeeByEmail = async (email) => {
 
 export const getAllEmployeesBySalaryRange = async (min, max) => {
   try {
-    const response = await axios.get(`${url}/employees/get-all-by-salary-range/${min}/${max}`, {
+    const response = await axios.get(`http://localhost:8000/api/employees/get-all-by-salary-range/${min}/${max}`, {
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
@@ -64,7 +61,7 @@ export const getAllEmployeesBySalaryRange = async (min, max) => {
 
 export const registerOneEmployee = async (employee) => {
   try {
-    let addEmployeeResponse = await axios.post(`${url}/employees/post`, employee, {
+    let addEmployeeResponse = await axios.post(`http://localhost:8000/api/employees/post`, employee, {
       withCredentials: true
     });
     if(addEmployeeResponse.status === 200){
